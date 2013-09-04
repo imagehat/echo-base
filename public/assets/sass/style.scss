@@ -4,12 +4,24 @@
   ========================================================================== 
 */
 
+// Compass
+@import "compass";
+
+// Variables
+@import "variables";
+
 // Normalize
 @import "normalize";
 
+// Base styles
+@import "base";
 
-// Helper styles
-@import "helpers";
+// Main component styles
+@import "main";
+
+// Form styles
+@import "forms";
 
 // Print styles
 @import "print";
+

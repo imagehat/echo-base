@@ -1,0 +1,36 @@
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: vertical;
+}
+
+/* placeholder text - these must be separate */
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: $textColorLight;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: $textColorLight;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: $textColorLight;
+}
+
+/* placeholder focused text - these must be separate */
+input:focus:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: $textColor;
+}
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+  color: $textColor;
+}
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: $textColor;
+}

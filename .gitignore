@@ -1,4 +1,17 @@
 .DS_Store
+*.sublime-project
+*.sublime-workspace
 .sass-cache
-node_modules
-Gemfile.lock
+
+# local config
+config/config.local.php
+
+# caches
+*/expressionengine/cache/*
+!*/expressionengine/cache/.gitkeep
+*/assets/made/*
+!*/assets/made/.gitkeep
+
+# user uploads
+*/uploads/default/*
+!*/uploads/default/.gitkeep

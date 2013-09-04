@@ -1,0 +1,145 @@
+/* 
+
+  Base styles
+
+  Keep styles in this file general base mobile-first styles only
+  and put module-specific and targeted styles elsewhere.
+
+
+*/
+html, button, input, select, textarea {
+  color: $textColor;
+  font-family: $baseFontFamily;
+}
+
+body {
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+  background: #fff;
+}
+
+::-moz-selection { 
+  background: $highlightColor; 
+  text-shadow: none; 
+}
+::selection { 
+  background: $highlightColor; 
+  text-shadow: none; 
+}
+
+a { 
+  color: $linkColor; 
+  text-decoration: none;
+
+  &:hover { 
+    color: $linkColorHover; 
+    text-decoration: underline; 
+  }
+  &:active { 
+    outline: 0; 
+  }
+
+  .plain {
+  color: $textColor;
+  text-decoration: underline;
+  }
+}
+
+hr { 
+  display: block; 
+  height: 1px; 
+  border: 0; 
+  border-top: 1px solid #ccc; 
+  margin: 3em 0; 
+  padding: 0; 
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  font-family: $headlineFontFamily; 
+  color: $textColor; 
+  line-height: 1.2; 
+  margin: 0; 
+  font-weight: bold; 
+
+  a {
+    color: $textColor; text-decoration: none;
+  }
+
+  a:hover {
+   color: $linkColorHover; text-decoration: none; 
+ }
+
+}
+
+h1 { font-size: 26px; line-height: 1.2; margin: 0; }
+h2 { font-size: 18px; line-height: 1.2; margin: 0; }
+h3 { font-size: 12px; line-height: 1.5; margin: 0; }
+h4 { font-size: 12px; line-height: 1.5; margin: 0; }
+h5 { font-size: 10px; line-height: 1.5; margin: 0; }
+
+p, ul, ol, dl, blockquote {
+  margin: 0 0 1.5em 0;
+}
+
+blockquote {
+  margin: 1.5em 0;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1.2;
+
+  p {
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 0 0 0.5em 0;
+    padding: 0 0 0 10px;
+    color: $brandColor;
+    text-indent: -8px;
+  }
+
+  cite,
+  p.cite {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: italic;
+    text-indent: none;
+    padding: 0 0 0 17px;
+    color: $textColorLight;
+  }
+}
+
+img { 
+  vertical-align: middle; 
+  max-width: 100%; 
+}
+
+
+/* alignment and helper styles */
+
+img.left, img.photo-left, img[style*="float:left"], img[style*="float: left"], img.align-left,
+figure.left, figure.photo-left, figure[style*="float:left"], figure[style*="float: left"], figure.align-left {
+  float: left;
+  margin: 0 15px 15px 0;
+}
+img.right, img.photo-right, img[style*="float:right"], img[style*="float: right"], img.align-right,
+figure.right, figure.photo-right, figure[style*="float:right"], figure[style*="float: right"], figure.align-right {
+  float: right;
+  margin: 0 0 15px 15px;
+}
+
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+.align-center { text-align: center; }
+
+.clear { clear: both; }
+
+.nobr, .nowrap { white-space:nowrap; }
+
+.edit-this a {
+  @include inline-block;
+  background: $brandColor;
+  color: #fff;
+  padding: 2px 6px;
+  text-decoration: none;
+  font-size: 11px;
+}
